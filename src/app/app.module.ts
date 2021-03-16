@@ -1,8 +1,8 @@
-import { NgModule, CUSTOM_ELEMENTS_SCHEMA  } from '@angular/core';
-import { BrowserModule } from '@angular/platform-browser';
+import {NgModule, CUSTOM_ELEMENTS_SCHEMA} from '@angular/core';
+import {BrowserModule} from '@angular/platform-browser';
 import '@google/model-viewer';
 
-import { AppComponent } from './app.component';
+import {AppComponent} from './app.component';
 
 @NgModule({
   declarations: [
@@ -15,4 +15,5 @@ import { AppComponent } from './app.component';
   providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {
+}
