@@ -1,5 +1,5 @@
 model-viewer {
-  width: 500px;
-  height: 900px;
+  width: 100vh;
+  height: 100vw;
   margin: 0 auto;
 }
