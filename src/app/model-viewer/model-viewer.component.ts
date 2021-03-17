@@ -14,9 +14,9 @@ export class ModelViewerComponent implements OnInit {
 
   switchSrc(name: string): void {
     const modelViewer = document.querySelector('model-viewer');
-    const base = './assets/models/' + name;
-    modelViewer.setAttribute('src', base + '.glb');
-    modelViewer.setAttribute('ios-src', '/iOS/' + base + '.usdz');
+    const base = './assets/models/';
+    modelViewer.setAttribute('src', base + name + '.glb');
+    modelViewer.setAttribute('ios-src', base + '/iOS/' + name + '.usdz');
     // modelViewer.setAttribute('poster', base + '.png');
 
     const slides = document.querySelectorAll('.slide');
