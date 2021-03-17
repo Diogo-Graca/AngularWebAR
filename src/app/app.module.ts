@@ -3,10 +3,12 @@ import {BrowserModule} from '@angular/platform-browser';
 import '@google/model-viewer';
 
 import {AppComponent} from './app.component';
+import { ModelViewerComponent } from './model-viewer/model-viewer.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    ModelViewerComponent
   ],
   imports: [
     BrowserModule

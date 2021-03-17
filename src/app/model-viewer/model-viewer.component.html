@@ -1,0 +1,21 @@
+<model-viewer #modelViewer src="./assets/models/Astronaut.glb"
+              ios-src="./assets/models/iOS/Astronaut.usdz"
+              ar ar-modes="webxr scene-viewer quick-look" ar-scale="auto"
+              camera-controls autoplay auto-rotate shadow-intensity="1">
+
+  <button slot="ar-button">
+    👋 Activate AR
+  </button>
+
+  <div class="slider">
+    <div class="slides">
+
+      <button id="Astronaut" class="slide selected" (click)="switchSrc('Astronaut')"> Astronaut </button>
+
+      <button id="Horse" class="slide" (click)="switchSrc('Horse')"> Horse </button>
+
+      <button id="shishkebab" class="slide" (click)="switchSrc('shishkebab')"> Shishkebab </button>
+
+    </div>
+  </div>
+</model-viewer>
