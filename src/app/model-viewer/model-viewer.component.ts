@@ -17,7 +17,7 @@ export class ModelViewerComponent implements OnInit {
     const base = './assets/models/';
     modelViewer.setAttribute('src', base + name + '.glb');
     modelViewer.setAttribute('ios-src', base + '/iOS/' + name + '.usdz');
-    // modelViewer.setAttribute('poster', base + '.png');
+    modelViewer.setAttribute('poster', base + name + '.png');
 
     const slides = document.querySelectorAll('.slide');
     const clickedSlide = document.getElementById(name);
